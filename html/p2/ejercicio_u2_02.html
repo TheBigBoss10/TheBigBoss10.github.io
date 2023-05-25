@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--
+    Nombre:CRISTIAN MICHEL SEGOVIA BARCO
+    Materia: Programacion web 1
+    Fecha: 09/03/23
+    Descripcion:Etiquetas para formularios
+-->
+<html lang="es">
+    <head>
+        <title>Unidad 02 - Ejercicio 02</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Jorge Cabrera">
+        <meta name="revised" content="Jueves, 9 de marzo del 2023">
+        <meta name="description" content="form,label,button,input,select,details,textarea,progress,text,password,
+        hidden,radio,checkbox,file,color,date,time,datalist,month,week,number,range,reset,submit,min,max,placeholder,
+        value,checked,list">
+    </head>
+    <body>
+        <hgroup>
+            <h1>Formularios web</h1>
+            <form>
+               <p>Formulario <br>Web HTML</p>
+               <label>Etiqueta Label<br></label>
+               <label>Control (Boton)</label><button>Aceptar</button>
+               <br><label>Control (Input: Text): </label><input type="text">
+               <br><label>Control (Input: Contraseña): </label><input type="password">
+               <br><label>Control (Input: Oculto): </label><input type="hidden">
+               <br><label>Control (Input: Radio): </label><input type="radio">
+               <br><label>Control (Input: Verificacion): </label><input type="checkbox">
+               <br><label>Control (Input : Archivos):</label><input type="file">
+               <br><label>Control (Input: Colores):</label><input type="color">
+               <br><label>Control (Input: Hora): </label><input type="time">
+               <br><label>Control (Input: Fecha): </label><input type="date">
+               <br><label>Control (Input: Fecha y hora): </label><input type="datetime-local">
+               <br><label>Control (Input: Semana): </label><input type="week">
+               <br><label>Control (Input: Mes): </label><input type="month">
+               <br><label>Control (Input: Numero): </label><input type="number">
+               <br><label>Control (Input: Rango): </label><input type="range">
+               <br><label>Control (Input: Reinicio): </label><input type="reset">
+               <br><label>Control (Input: Subir ): </label><input type="submit">
+               <br><label>Control (Lista despegable): </label>
+               <select>
+                <option>Verdadero</option>
+                <option>Falso</option>
+               </select>
+               <br><label>Control (ComboBox): </label><input list="ListaValores">
+                <datalist id="ListaValores">
+                    <option value="Verdadero">
+                    <option value="Falso">
+                </datalist>
+               <br><label>Control (Caja de texto): </label><textarea placeholder="Comentarios..."></textarea>
+               <br><label>Control (Barra de progreso): </label><progress></progress>
+               <br><label>Control (Barra de progreso 0%): </label><progress min="0" max="100" value="0"></progress>
+               <br><label>Control (Barra de progreso 25%): </label><progress min="0" max="100" value="25"></progress>
+               <br><label>Control (Barra de progreso 50%): </label><progress min="0" max="100" value="50"></progress>
+               <br><label>Control (Barra de progreso 75%): </label><progress min="0" max="100" value="75"></progress>
+               <br><label>Control (Barra de progreso 100%): </label><progress min="0" max="100" value="100"></progress>
+            </form>
+        </hgroup>
+        <hgroup>
+            <h3>Ejemplos de uso</h3>
+            <form>
+                <p>Radio Button</p>
+                <label>1.Se puede decir que el lenguaje HTML es facil</label>
+                <!--<br><input type="radio" name="Pregunta_1">Verdadero
+                >!--<br><input type="radio" name="Pregunta_1">Falso-->
+                <select>
+                    <option>Verdadero</option>
+                    <option>Falso</option>
+                </select>
+                <p>Radio button multiple</p>
+                <label>2.Son las siglas de HyperText Markup Language</label>
+                <br><input type="radio" name="Pregunta_2">JS
+                <br><input type="radio" name="Pregunta_2">CSS
+                <br><input type="radio" name="Pregunta_2">HTML
+                <br><input type="radio" name="Pregunta_2">PHP
+                <br><input type="radio" name="Pregunta_2">SQL
+                <p>Radio button multiple</p>
+                <br><label>2.1Son las siglas de HyperText Markup Language</label>
+                <!--<br><input type="radio" name="Pregunta_2">JS
+                <br><input type="radio" name="Pregunta_2">CSS
+                <br><input type="radio" name="Pregunta_2">HTML
+                <br><input type="radio" name="Pregunta_2">PHP
+                <br><input type="radio" name="Pregunta_2">SQL-->
+                <select>
+                    <option>JS</option>
+                    <option>CSS</option>
+                    <option>HTML</option>
+                    <option>PHP</option>
+                    <option>SQL</option>
+                </select>
+                <p>Checkbox</p>
+                <label>3.Son las tecnologias aplicadas en programacion web I</label>
+                <br><input type="checkbox">JS
+                <br><input type="checkbox">CSS
+                <br><input type="checkbox">HTML
+                <br><input type="checkbox">PHP
+                <br><input type="checkbox">SQL
+                <p>Terminos y condiciones</p>
+                <label>4. Acepta estar de acuerdo con todos y cada uno de los terminos y condiciones</label><br>
+                <input type="radio" name="terms_cond">Aceptar
+                <input type="radio" name="terms_cond">Cancelar
+                <button>Continuar</button>
+                <p>Formatos</p>
+                <label>Telefono </label><input type="text" placeholder="(444) 123-4567"><br>
+                <label>Codigo Postal </label><input type="text" placeholder="78100" value="78100"><br>
+                <label>Matricula </label><input type="text" placeholder="181591" >
+                <p>Tipos de rangos</p>
+                <label>Numero entre 1 y 10: </label><input type="range" min="1" max="10"><br>
+                <label>Numero entre 1 y 3: </label><input type="range" min="1" max="3"><br>
+                <label>Calificacion entre (0-10): </label><input type="range" min="0" max="10"><br>
+                <label>Valor entre -10 y 10</label><input type="range" min="-10" max="10"><br>
+                <label>Restablecer</label><input type="reset"><br>
+                <p>Estados de la republica</p>
+                <select>
+                    <option>---Selecciona----</option>
+                    <option>Aguascalientes </option> 
+                    <option>Baja California Norte</option>
+                    <option> Baja California Sur </option> 
+                    <option>Campeche </option> 
+                    <option>Chiapas</option>
+                    <option>Chihuahua</option>
+                    <option>Ciudad de México </option>
+                    <option>Coahuila </option>
+                    <option>Colima </option>
+                    <option>Durango </option>
+                    <option>Estado de México </option>
+                    <option>Guanajuato </option>
+                    <option>Guerrero </option>
+                    <option>Hidalgo </option>
+                    <option>Jalisco </option>
+                    <option>Michoacán </option>
+                    <option>Morelos </option>
+                    <option>Nayarit </option>
+                    <option>Nuevo León </option>
+                    <option>Oaxaca </option>
+                    <option>Puebla </option>
+                    <option>Querétaro </option>
+                    <option>Quintana Roo</option>
+                    <option>San Luis Potosí </option>
+                    <option>Sinaloa</option>
+                    <option>Sonora</option>
+                    <option>Tabasco</option> 
+                    <option>Tamaulipas</option>
+                    <option>Tlaxcala</option>
+                    <option>Veracruz</option>
+                    <option>Yucatán</option>
+                    <option>Zacatecas</option> 
+                </select>
+                <p>Estado de la republica v.2.0</p><input list="estados">
+                <datalist id="estados">
+                    <option value=""></option>
+                    <option value="Aguascalientes">
+                    <option value="Baja California">
+                    <option value="Baja California Sur">                         <option value="Campeche">
+                    <option value="Chiapas">
+                    <option value="Chihuahua"> 
+                    <option value="Ciudad de México"> 
+                    <option value= "Coahuila">
+                    <option value="Colima" >                       <option value="Durango" >
+                    <option value="Estado de México"> 
+                    <option value="Guanajuato" >
+                    <option value="Guerrero" >
+                    <option value="Hidalgo" >
+                    <option value="Jalisco" >
+                    <option value="Michoacán"> 
+                    <option value="Morelos" >                        <option value="Nayarit" >
+                    <option value="Nuevo León"> 
+                    <option value="Oaxaca" >
+                    <option value="Puebla" >
+                    <option value="Querétaro"> 
+                    <option value="Quintana Roo"> 
+                    <option value="San Luis Potosí"> 
+                    <option value="Sinaloa" >
+                    <option value="Sonora" >
+                    <option value="Tabasco" >
+                    <option value="Tamaulipas"> 
+                    <option value="Tlaxcala" >
+                    <option value="Veracruz" >
+                    <option value="Yucatán" >
+                    <option value="Zacatecas"> 
+                </datalist>
+            </form>
+        </hgroup>
+    </body>    
+</html>
