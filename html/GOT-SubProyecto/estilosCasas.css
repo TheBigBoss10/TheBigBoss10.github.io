@@ -1,0 +1,225 @@
+body {
+    background: url("imagenes/fondobody.jpg");
+}
+
+#contenedor {
+    max-width: 95%;
+    margin: 0 auto;
+    background-repeat: repeat;
+}
+
+#fijo {
+    top: 0;
+    position: fixed;
+    width: 94%;
+    z-index: 1;
+}
+
+#cabecera {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    background: linear-gradient(to right, #d43131, #690303);
+}
+
+#cabecera .izquierda {
+    height: 90px;
+    float: left;
+    margin-left: 30px;
+}
+
+#cabecera .logo {
+    height: 90px;
+    width: 35%;
+}
+
+#cabecera .derecha {
+    height: 90px;
+    float: right;
+    margin-right: 30px;
+}
+
+#menudespegable {
+    width: 100%;
+    background-color: #000;
+    clear: both;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 17px;
+}
+
+nav li {
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+    padding: 3px 10px;
+    background-color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+nav li:hover {
+    background-color: #fff;
+    color: #e20c0c
+}
+
+nav li>ul {
+    display: none;
+}
+
+nav li:hover>ul {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -40px;
+}
+
+#cuerpo {
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 200%;
+    width: 100%;
+    height: 1250px;
+    background: url("imagenes/fondocontenedor2.jpg");
+    color: black;
+}
+
+#imagenes img{
+    padding: 20px;
+}
+
+
+#imagenes img:hover{
+    transform: scale(1.05);
+    background-color: #690303;
+    border-radius: 3em;
+}
+
+
+
+
+#pie {
+    clear: both;
+    background-color: black;
+    color: white;
+    height: 580px;
+}
+
+
+#superiorIzquierda {
+    width: 400px;
+    font-size: 15px;
+    float: left;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+#superiorIzquierda ul {
+    padding-left: 100px;
+}
+
+#superiorIzquierda a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#fotoCentrada {
+    clear: both;
+    padding-left: 300px;
+}
+
+#fotoCentrada img {
+    height: 180px;
+    width: 600px;
+}
+
+#fotoCentrada:hover {
+    transform: scale(1.15);
+}
+
+#superiorDerecha {
+    width: 400px;
+    font-size: 15px;
+    float: right;
+    margin-top: 20px;
+}
+
+#superiorDerecha img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3em;
+}
+
+#superiorDerecha ul li {
+    list-style: none;
+    display: inline;
+    padding: 15px;
+}
+
+#inferiorIzquierda {
+    width: 400px;
+    font-size: 15px;
+    float: left;
+    margin-left: 20px;
+}
+
+#inferiorIzquierda a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#inferiorIzquierda ul {
+    padding-left: 115px;
+}
+
+.libro {
+    width: 80px;
+    height: 50px;
+    border-radius: 5em;
+    float: left;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+#inferiorDerecha {
+    float: right;
+    margin-right: 20px;
+
+}
+
+#inferiorDerecha img {
+    width: 300px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+#masInfo {
+    text-align: center;
+    font-style: italic;
+    clear: both;
+    padding-top: 30px;
+}
+
+#masInfo ul li {
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
